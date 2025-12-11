@@ -1,0 +1,19 @@
+[ req ]
+default_bits       = 2048
+prompt             = no
+default_md         = sha256
+distinguished_name = req_dn
+x509_extensions    = v3_req
+
+[ req_dn ]
+C  = VN
+ST = Ho Chi Minh
+L  = Tan Phu
+O  = Seedcom
+OU = IT
+CN = Minh Hung
+emailAddress = minhhung8712@gmail.com
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
